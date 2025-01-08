@@ -2,11 +2,11 @@ import java.util.Scanner;
 class demo017{
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
-        System.out.println("Enter value A: ");
+        System.out.println("Enter the digit: ");
         int A =scanner.nextInt();
-        System.out.println("Enter value B: ");
-        int B =scanner.nextInt();
-        int c=A+B;
-        System.out.println("The sum of A and B is= "+c);
+        int tens=A/10;
+        int ones=A%10;
+        int c=tens+ones;
+        System.out.println("The sum of digit is= "+c);
     }
 }
